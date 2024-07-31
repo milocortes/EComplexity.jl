@@ -1,4 +1,4 @@
-# EComplexity.jl: Economic Complexity in Julia
+# EComplexity.jl : Economic Complexity in Julia
 
 EComplexity is a package to calculate economic complexity indices in Julia. The package is inspired by others implementations as [py-ecomplexity](https://github.com/cid-harvard/py-ecomplexity/tree/master).
 
