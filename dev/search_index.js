@@ -1,0 +1,3 @@
+var documenterSearchIndex = {"docs":
+[{"location":"getting_started/#Getting-Started","page":"Getting Started","title":"Getting Started","text":"","category":"section"},{"location":"introduction/#Introduction","page":"Introduction","title":"Introduction","text":"","category":"section"},{"location":"introduction/","page":"Introduction","title":"Introduction","text":"dede","category":"page"},{"location":"economic_complexity_theory/#Economic-Complexity","page":"Economic Complexity","title":"Economic Complexity","text":"","category":"section"},{"location":"#EComplexity.jl","page":"Introduction","title":"EComplexity.jl","text":"","category":"section"},{"location":"","page":"Introduction","title":"Introduction","text":"Documentation for EComplexity.jl","category":"page"}]
+}
