@@ -1,23 +1,24 @@
 using Documenter
-using EComplexity
+#using EComplexity
 
 makedocs(
     sitename = "EComplexity.jl",
     format = Documenter.HTML(),
-    modules = [Ecomplexity],
+    #modules = [Ecomplexity],
     clean     = true,
     pages = Any[
-        "Economic Complexity" => "index.md",
-        "Modelo" => Any[
-           "modelo/dsolg.md"
+        "Introduction" => "index.md",
+        "" => Any[
+           "introduction.md"
          ],        
-         "Datos" => Any[
-          "datos/dsolg_data.md"
+         "Getting Started" => Any[
+          "getting_started.md"
         ],
-        "Calibración" => Any[
-            "calib/dsolg_calib.md"
+        "Economic Complexity Theory" => Any[
+            "economic_complexity_theory.md"
           ]      
 ])
+
 
 # Documenter can also automatically deploy documentation to gh-pages.
 # See "Hosting Documentation" and deploydocs() in the Documenter manual
