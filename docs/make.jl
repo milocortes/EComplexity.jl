@@ -7,10 +7,7 @@ makedocs(
     #modules = [Ecomplexity],
     clean     = true,
     pages = Any[
-        "Introduction" => "index.md",
-        "" => Any[
-           "introduction.md"
-         ],        
+      "Introduction" => "index.md",    
          "Getting Started" => Any[
           "getting_started.md"
         ],

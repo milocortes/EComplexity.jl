@@ -1,1 +1,1 @@
-# Economic Complexity Theory
+# Economic Complexity
