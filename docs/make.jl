@@ -8,7 +8,7 @@ makedocs(
     clean     = true,
     pages = Any[
       "Introduction" => "index.md",    
-         "Getting Started" => Any[
+         "User Guide" => Any[
           "getting_started.md"
         ],
         "Economic Complexity Theory" => Any[
