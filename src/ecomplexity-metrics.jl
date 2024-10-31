@@ -493,7 +493,7 @@ function calc_coi_cog(M_rca::DataFrames.DataFrame,
     ubiquity_vec = vec(sum(Matrix(M_mat), dims=1))
     
     ## Calculamos la matriz Mcc
-    Mcc = inv(Diagonal(diversity_vec))*Matrix(M_mat)*inv(Diagonal(ubiquity_vec))*Matrix(M_mat)'
+    Mcc = pinv(Diagonal(diversity_vec))*Matrix(M_mat)*pinv(Diagonal(ubiquity_vec))*Matrix(M_mat)'
 
     ## Obtenemos el eigenvector de la matriz Mcc asociado al segundo eigenvector más grande
     kc = real.(eigvecs(Mcc)[:,sortperm(real.(eigvals(Mcc)))[end-1] ])
@@ -596,11 +596,11 @@ function calc_eci_pci(M_rca::DataFrames.DataFrame,
     ubiquity_vec = vec(sum(Matrix(M_mat), dims=1))
     
     ## Calculamos la matriz Mcc
-    Mcc = inv(Diagonal(diversity_vec))*Matrix(M_mat)*inv(Diagonal(ubiquity_vec))*Matrix(M_mat)'
+    Mcc = pinv(Diagonal(diversity_vec))*Matrix(M_mat)*pinv(Diagonal(ubiquity_vec))*Matrix(M_mat)'
     Mcc_py = (Matrix(M_mat) ./ diversity_vec) * (Matrix(M_mat) ./ ubiquity_vec')'
 
     ## Calculamos la matriz Mcc
-    Mpp = inv(Diagonal(ubiquity_vec))*Matrix(M_mat)'*inv(Diagonal(diversity_vec))*Matrix(M_mat)
+    Mpp = pinv(Diagonal(ubiquity_vec))*Matrix(M_mat)'*pinv(Diagonal(diversity_vec))*Matrix(M_mat)
     Mpp_py = (Matrix(M_mat) ./ ubiquity_vec')' * (Matrix(M_mat) ./ diversity_vec) 
 
     ## Obtenemos el eigenvector de la matriz Mcc asociado al segundo eigenvector más grande
